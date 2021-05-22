@@ -1,0 +1,44 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(133, 241, 243);
+  font-family: 'Big Shoulders Display', cursive;
+}
+
+h1 {
+  text-align: center;
+  color: rgb(1, 83, 1);
+}
+
+h2 {
+  font-size: 2rem;
+  color: rgb(1, 46, 80);
+}
+
+p {
+  font-size: 1.2rem;
+}
+
+ul {
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+}
+
+li {
+  list-style: none;
+  border: 2px dotted darkgray;
+  padding: 15px 0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+img {
+  width: 250px;
+}

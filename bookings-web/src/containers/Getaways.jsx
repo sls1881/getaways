@@ -15,6 +15,7 @@ const Getaways = () => {
 
   return (
     <div className="getaway-container">
+      <h1>Places</h1>
       {loading ? <Spinner /> : <PlaceList places={places} />}
     </div>
   );

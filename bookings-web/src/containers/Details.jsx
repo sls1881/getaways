@@ -19,6 +19,7 @@ export default function Details() {
 
   return (
     <div className="details-container">
+      <h1>Place</h1>
       {loading ? <Spinner /> : <DetailsItem place={place} />}
     </div>
   );

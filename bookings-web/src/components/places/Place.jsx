@@ -9,24 +9,17 @@ const Place = ({
   location,
   pricePerNight,
   image,
-  imageThumbnail,
   maxGuests,
-  petFriendly,
-  pool,
-  wifi,
 }) => {
   return (
     <Link className="link" to={`/${id}`}>
-      <div>
-        <p>{name}</p>
+      <div className="item-container">
+        <h2>{name}</h2>
         <p>{description}</p>
-        <p>{location}</p>
-        <p>{pricePerNight}</p>
+        <p>Location: {location}</p>
+        <p>Price per Night: {pricePerNight}</p>
+        <p>Max Guest: {maxGuests}</p>
         <img alt={name} src={image} />
-        <p>{maxGuests}</p>
-        <p>{petFriendly ? 'Pet Friendly' : 'No Pets Allowed'}</p>
-        {pool ? <p>Has a Pool!</p> : null}
-        {wifi ? <p>Free Wifi</p> : null}
       </div>
     </Link>
   );

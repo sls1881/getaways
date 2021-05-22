@@ -17,15 +17,17 @@ function DetailsItem({
   return (
     <div className="details-display">
       <ul aria-label="place">
-        <li>Property Name: {name}</li>
-        <li>{description}</li>
-        <li>City: {location}</li>
-        <li>Price Per Night: {pricePerNight}</li>
-        <img alt={name} src={image} />
-        <li>Max Guests: {maxGuests}</li>
-        <li>Pets: {petFriendly ? 'Pet Friendly' : 'No Pets Allowed'}</li>
-        {pool ? <li>Has a Pool!</li> : null}
-        {wifi ? <li>Free Wifi</li> : null}
+        <li>
+          <p>Property Name: {name}</p>
+          <p>{description}</p>
+          <p>City: {location}</p>
+          <p>Price Per Night: {pricePerNight}</p>
+          <p>Max Guests: {maxGuests}</p>
+          <p>Pets: {petFriendly ? 'Pet Friendly' : 'No Pets Allowed'}</p>
+          {pool ? <p>Has a Pool!</p> : null}
+          {wifi ? <p>Free Wifi</p> : null}
+          <img alt={name} src={image} />
+        </li>
       </ul>
     </div>
   );

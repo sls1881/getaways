@@ -4,7 +4,7 @@ import Place from './Place';
 
 const PlaceList = ({ places }) => {
   return (
-    <div>
+    <div className="list-container">
       <ul aria-label="places">
         {places.map((place) => (
           <li key={place.id}>
